@@ -16,16 +16,16 @@ let refBotaoPapel    = document.getElementById('papel');
 let refBotaoTesoura  = document.getElementById('tesoura');
 
 function destacarBotao(){
-    refBotaoPedra = true ? refBotaoPedra.style = "background-color: red" : refBotaoPedra.style = "background-color: blue";
+    pedra === 1 ? refBotaoPedra.style = "background-color: red" : refBotaoPedra.style = "background-color: blue";
     //TRABALHAR EM UMA LÓGICA LIMPA PARA ESTA FUNÇÃO QUE DESTACA O BOTÃO SELECIONADO
 }
 
 function escolheuPedra(){
-    destacarBotao();
     limpaEscolha();
     mudarImagemP1();
     mudarImagemP2();
     pedra = 1;
+    destacarBotao();
     // console.log(pedra);
     computador();
     
