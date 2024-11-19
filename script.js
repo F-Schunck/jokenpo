@@ -5,14 +5,23 @@ let tesoura          = 0;
 let adversario       = 0;
 let pontosPlayer1    = 0;
 let pontosPlayer2    = 0;
-let mensagemAlerta   = 'Escolha um Joken';
+let mensagemAlerta   = 'Escolha entre pedra, papel e tesoura!';
 let placarPlayer1    = document.getElementById('player1');
 let placarPlayer2    = document.getElementById('player2');
 let imagemPlayer1    = document.getElementById('imgP1');
 let imagemPlayer2    = document.getElementById('imgP2');
 let pastaImagem      = "./imagens/";
+let refBotaoPedra    = document.getElementById('pedra');
+let refBotaoPapel    = document.getElementById('papel');
+let refBotaoTesoura  = document.getElementById('tesoura');
+
+function destacarBotao(){
+    refBotaoPedra = true ? refBotaoPedra.style = "background-color: red" : refBotaoPedra.style = "background-color: blue";
+    //TRABALHAR EM UMA LÓGICA LIMPA PARA ESTA FUNÇÃO QUE DESTACA O BOTÃO SELECIONADO
+}
 
 function escolheuPedra(){
+    destacarBotao();
     limpaEscolha();
     mudarImagemP1();
     mudarImagemP2();
@@ -100,12 +109,12 @@ function atualizaplacar(){
 };
 
 function mudarImagemP1(){
-    pedra != 0 ? imagemPlayer1.src = `${pastaImagem}pedra.png` : papel != 0 ? imagemPlayer1.src = `${pastaImagem}papel.png` : tesoura != 0 ? imagemPlayer1.src = `${pastaImagem}tesoura.png` : imagemPlayer1.src = `${pastaImagem}vazio.png`;
+    pedra != 0 ? imagemPlayer1.src = `${pastaImagem}pedra_esq.png` : papel != 0 ? imagemPlayer1.src = `${pastaImagem}papel_esq.png` : tesoura != 0 ? imagemPlayer1.src = `${pastaImagem}tes_esq.png` : imagemPlayer1.src = `${pastaImagem}vazio.png`;
     
 };
 
 function mudarImagemP2(){
-    adversario === 1 ? imagemPlayer2.src = `${pastaImagem}pedra.png` : adversario === 2 ? imagemPlayer2.src = `${pastaImagem}papel.png` : adversario === 3 ? imagemPlayer2.src = `${pastaImagem}tesoura.png` : imagemPlayer2.src = `${pastaImagem}vazio.png`;
+    adversario === 1 ? imagemPlayer2.src = `${pastaImagem}pedra_dir.png` : adversario === 2 ? imagemPlayer2.src = `${pastaImagem}papel_dir.png` : adversario === 3 ? imagemPlayer2.src = `${pastaImagem}tes_dir.png` : imagemPlayer2.src = `${pastaImagem}vazio.png`;
 };
 
 function jokenpo(){
