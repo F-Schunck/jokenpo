@@ -1,0 +1,57 @@
+@font-face {
+    font-family: originalSurfer;
+    src: url(../fontes/OriginalSurfer-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: originalSurfer, Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --cor1: #e1e1e1;
+    --cor2: #242424;
+    --cor3: #EBD700;
+}
+
+body{
+    background-color: var(--cor2);
+    color: var(--cor1);
+}
+
+.container__principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container__filho{
+    /* border: 1px solid var(--cor1); */
+    /* border-radius: 10px; */
+    min-width: 280px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.header{
+    background-color: var(--cor3);
+    text-align: center;
+    font-size: 33px;
+    color: var(--cor2);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.start{
+    padding: 10px;
+    background-color: var(--cor3);
+    border-radius: 5px;
+    border: none;
+}
