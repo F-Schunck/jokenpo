@@ -1,13 +1,19 @@
+@font-face {
+    font-family: originalSurfer;
+    src: url(../fontes/OriginalSurfer-Regular.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: originalSurfer, Arial, Helvetica, sans-serif;
 }
 
 :root{
     --cor1: #e1e1e1;
     --cor2: #242424;
+    --cor3: #EBD700;
 }
 
 body{
@@ -19,13 +25,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 
 .container__filho{
-    border: 1px solid var(--cor1);
+    /* border: 1px solid var(--cor1);
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px; */
     display: flex;
     align-items: center;
     gap: 10px;

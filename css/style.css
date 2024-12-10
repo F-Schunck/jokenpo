@@ -29,14 +29,27 @@ body{
 }
 
 .container__filho{
-    /* border: 1px solid var(--cor1); */
-    /* border-radius: 10px; */
     min-width: 280px;
     padding: 10px;
     display: flex;
     align-items: center;
     gap: 10px;
     flex-direction: column;
+}
+
+.container__filho--ajustes{
+    width: 100%;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.container__filho--ajustes > input{
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    height: 30px;
 }
 
 .header{
@@ -50,8 +63,63 @@ body{
 }
 
 .start{
-    padding: 10px;
+    padding: 5px;
+    font-size: 18px;
+    width: 100px;
+    margin-top: 10px;
     background-color: var(--cor3);
     border-radius: 5px;
     border: none;
+}
+
+/* CSS PÁGINA JOGO */
+
+.container__game{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--cor3);
+    font-size: 35px;
+}
+
+.container__game > img {
+    border: 1px solid var(--cor1);
+    border-radius: 50%;
+    max-width: 50px;
+    max-height: 60px;
+}
+
+.tag__nome{
+    background-color: var(--cor1);
+    color: var(--cor2);
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.container__placar1{
+    width: 100%;
+    text-align: left;
+    margin: 10px 0 5px 0;
+}
+
+.container__placar2{
+    width: 100%;
+    text-align: right;
+    margin: 5px 0 10px 0;
+}
+
+.container__selecao > button{
+    border: none;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0 2px; 
+    /* PAREI AQUI */
+}
+
+.container__play{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }

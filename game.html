@@ -5,32 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JokenPÔ!</title>
     <link rel="shortcut icon" href="imagens/cut2.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container__principal">
         <div class="container__filho">
-            <h1>JokenPÔ!</h1>
-            <div class="container__placar">
-                <span>player</span>
+            <div class="header">
+                <p>Jokenpô</p>
+            </div>
+            <div class="container__placar1">
+                <span class="tag__nome">player</span>
                 <span id="player1">0</span>
-                <span>|</span>
-                <span>computador</span>
-                <span id="player2">0</span>
             </div>
             <div class="container__game">
                 <img src="imagens/vazio.png" alt="vazio" id="imgP1">
                 <span>VS</span>
                 <img src="imagens/vazio.png" alt="vazio" id="imgP2">
             </div>
-            <div class="container__play">
-                <button onclick="jokenpo()">JokenPÔ!</button> 
+            <div class="container__placar2">
+                <span id="player2">0</span>
+                <span class="tag__nome">Ninja</span>
             </div>
             <div class="container__selecao">
-                <button id="pedra" onclick="escolheuPedra()">pedra</button>
-                <button id="papel" onclick="escolheuPapel()">papel</button>
-                <button id="tesoura" onclick="escolheuTesoura()">tesoura</button>
+                <button id="pedra" onclick="escolheuPedra()">Stone</button>
+                <button id="papel" onclick="escolheuPapel()">Paper</button>
+                <button id="tesoura" onclick="escolheuTesoura()">Scissors</button>
+            </div>
+            <div class="container__play">
+                <button onclick="jokenpo()">Battle</button> 
+                <button>reset</button>
             </div>
         </div>
     </div>
